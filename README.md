@@ -11,4 +11,3 @@ Você foi contratado para desenvolver um sistema bancário orientado a objeto em
 4. `transferir(origem, destino, valor)`: Este método deve permitir a transferência de dinheiro da conta de origem para a conta de destino, com o valor especificado. Certifique-se de que haja saldo suficiente na conta de origem para efetuar a transferência.
 
 5. `saldo(conta)`: Este método deve retornar o saldo atual da conta especificada.
-
