@@ -30,7 +30,8 @@ def main():
                     os.system("cls")
                     print("Você escolheu transferir seu dinheiro!")
                     cliente.transferir(origem = input("Digite o nome da conta de origem: "), destino = input("Digite o nome da conta de destino: "), valor_transf = float(input("Digite o valor a ser transferido: ")))
-
+                    os.system("pause")
+                    os.system("cls")
                 case 5:
                     os.system("cls")
                     print("Você escolheu exibir seu saldo atual.")
@@ -50,7 +51,8 @@ def main():
                     if origem == cliente.getClientenome() and cliente.getClienteSaldo() >= cliente.getTransfValor():
                         cliente.transferir(destino = input("Digite a conta destino:"), valor_transf = float(input("Digite o valor a ser transferido: ")))
                         cliente.setClienteSaldo(cliente.getClienteSaldo() + cliente.getTransfValor())
-
+                        os.system("pause")
+                        os.system("cls")
                     else:
                         print("Você não possui saldo ou a conta origem está errada.")
                         os.system ("pause")
