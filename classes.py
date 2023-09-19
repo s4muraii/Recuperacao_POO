@@ -4,12 +4,6 @@ class Banco:
     def __init__ (self, nome_banc, saldo_banc):
         self.nome_banc = nome_banc
         self.saldo_banc = saldo_banc
-
-    def criar_conta (self, nome_cliente, saldo_inicial_cliente):
-        self.nome_cliente = nome_cliente
-        self.saldo_inicial_cliente = saldo_inicial_cliente
-        clientes.append(nome_cliente, saldo_inicial_cliente)
-        return saldo_inicial_cliente
     
     def getClientenome(self):
         return self.nome_cliente
@@ -42,3 +36,10 @@ class Banco:
         origem = input("Digite a conta de origem: ")
         destino = input("Digite a conta destino: ")
         valor_transf = float(input("Digite o valor desejado: "))
+
+class Cliente (Banco):
+    def __init__ (self, nome_cliente, saldo_inicial_cliente):
+        self.nome_cliente = nome_cliente
+        self.saldo_inicial_cliente = saldo_inicial_cliente
+        clientes.append(Cliente)
+        return saldo_inicial_cliente

@@ -7,7 +7,7 @@ menu = int(input("[1] - Criar conta\n[2] - Sacar\n[3] - Depositar\n[4] - Transfe
 match menu:
     case 1:
         os.system("cls")
-        cliente = banco.criar_conta(nome_cliente = input("Digite seu nome: "), saldo_inicial_cliente = float(input("Digite o saldo inicial da conta: ")))
+        cliente = Cliente (nome_cliente = input("Digite seu nome: "), saldo_inicial_cliente = float(input("Digite o saldo inicial da conta: ")))
         print("Cadastrado com sucesso!")
         os.system("pause")
         os.system("cls")
@@ -25,4 +25,3 @@ match menu:
     case 4:
         print("Você escolheu transferir seu dinheiro!")
         banco.transferir(origem = input("Digite o nome da conta de origem: "), destino = input("Digite o nome da conta de destino: "), valor_transf = float(input("Digite o valor a ser transferido: ")))
-        
