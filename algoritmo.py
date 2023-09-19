@@ -8,6 +8,7 @@ match menu:
     case 1:
         os.system("cls")
         cliente = Cliente (nome_cliente = input("Digite seu nome: "), saldo_inicial_cliente = float(input("Digite o saldo inicial da conta: ")))
+        clientes.append(cliente)
         print("Cadastrado com sucesso!")
         os.system("pause")
         os.system("cls")

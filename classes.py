@@ -41,5 +41,3 @@ class Cliente (Banco):
     def __init__ (self, nome_cliente, saldo_inicial_cliente):
         self.nome_cliente = nome_cliente
         self.saldo_inicial_cliente = saldo_inicial_cliente
-        clientes.append(Cliente)
-        return saldo_inicial_cliente
