@@ -40,3 +40,9 @@ while True:
                 os.system("cls")
             else:
                 print("Conta não encontrada!")
+
+        case 6:
+            origem = input("Digite a origem da transferencia: ")
+
+            if cliente.getClientenome == origem:
+                cliente.transferir(destino = input("Digite a conta destino:"), valor_transf = float(input("Digite o valor a ser transferido: ")))

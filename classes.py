@@ -32,11 +32,10 @@ class Cliente (Banco):
         self.saldo_inicial_cliente = (self.saldo_inicial_cliente) + (valor_dep)
         print (f"Depósito realizado com sucesso! Você depositou {valor_dep} reais")
 
-    def transferir (self, origem, destino, valor_transf):
-        self.origem = origem
+    def transferir (self, destino, valor_transf):
         self.destino = destino
         self.valor_transf = valor_transf
 
-        origem = input("Digite a conta de origem: ")
-        destino = input("Digite a conta destino: ")
-        valor_transf = float(input("Digite o valor desejado: "))
+    
+    def getTransfDestino(self):
+        return self.destino
