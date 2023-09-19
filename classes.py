@@ -16,6 +16,9 @@ class Cliente (Banco):
     def getClienteSaldo(self):
         return self.saldo_inicial_cliente
     
+    def setClienteSaldo(self, novosaldo):
+        self.saldo_inicial_cliente = novosaldo
+    
     def sacar(self, conta_saq, valor_saq):
         self.conta_saq = conta_saq
 
@@ -39,3 +42,6 @@ class Cliente (Banco):
     
     def getTransfDestino(self):
         return self.destino
+    
+    def getTransfValor(self):
+        return self.valor_transf
