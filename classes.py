@@ -19,18 +19,20 @@ class Banco:
     
     def sacar(self, conta_saq, valor_saq):
         self.conta_saq = conta_saq
-        conta_saq = input("Digite a conta desejada: ")
 
         self.valor_saq = valor_saq
-        valor_saq = input("Digite o valor que deseja sacar: ")
-        saldo_inicial_cliente = (saldo_inicial_cliente) - (valor_saq)
+        if saldo_inicial_cliente >= valor_saq:
+            saldo_inicial_cliente = (saldo_inicial_cliente) - (valor_saq)
+            print("Saque realizado com sucesso!")
+        else:
+            print("Você não possui saldo disonível!")
 
     def depositar(self, conta_dep, valor_dep):
         self.conta_dep = conta_dep
-        conta_dep = input("Digite a conta desejada: ")
 
         self.valor_dep = valor_dep
         saldo_inicial_cliente = (saldo_inicial_cliente) + (valor_dep)
+        print (f"Depósito realizado com sucesso! Você depositou {valor_dep} reais")
 
     def transferir (self, origem, destino, valor_transf):
         self.origem = origem
