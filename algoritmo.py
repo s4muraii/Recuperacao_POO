@@ -17,7 +17,7 @@ while True:
             case 2:
                 os.system("cls")
                 print("Você escolheu sacar seu dinheiro! Certifique-se de ter saldo disponível.")
-                cliente.sacar(conta_saq = input("Digite o seu nome: "), valor_saq = float(input("Digite o valor a ser sacado")))
+                cliente.sacar(conta_saq = input("Digite o seu nome: "), valor_saq = float(input("Digite o valor a ser sacado: ")))
                 os.system("pause")
                 os.system("cls")
             

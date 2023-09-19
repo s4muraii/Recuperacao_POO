@@ -33,7 +33,7 @@ class Cliente (Banco):
 
         self.valor_dep = valor_dep
         self.saldo_inicial_cliente = (self.saldo_inicial_cliente) + (valor_dep)
-        print (f"Depósito realizado com sucesso! Você depositou {valor_dep} reais")
+        print (f"Depósito realizado com sucesso! Você depositou {valor_dep} reais.")
 
     def transferir (self, destino, valor_transf):
         self.destino = destino
